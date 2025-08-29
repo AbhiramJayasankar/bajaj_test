@@ -49,9 +49,9 @@ def create_concat_string(alphabets: List[str]):
     result = ""
     for i, char in enumerate(reversed_chars):
         if i % 2 == 0:
-            result += char.lower()
-        else:
             result += char.upper()
+        else:
+            result += char.lower()
     
     return result
 
